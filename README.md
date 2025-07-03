@@ -79,13 +79,29 @@ import nltk
 nltk.download('punkt')
 ```
 
-6. **Environment Setup**
+6. **Download Roberta Files**:
+   
+
+[➡️ Click here to download `model.safetensors`](https://drive.google.com/file/d/1z0HIoZcLitt6pGS3c2zoeTRKH3aM-1g0/view?usp=drive_link)
+
+> Make sure the file is named exactly `model.safetensors`.
+
+After downloading, move the file to your project’s backend folder:
+```
+your-project/  
+├── backend/  
+│ ├── main.py  
+│ ├── model.safetensors ✅  
+│ └── ...
+``` 
+
+7. **Environment Setup**
 Create a `.env` file in the backend directory:
 ```env
 API_KEY=your_openai_api_key_here
 ```
 
-7. **Model Files**
+8. **Model Files**
 Ensure you have the following model files in your backend directory:
 - `HPE_multiclass_query_classifier.pkl` (Ensemble model)
 - `label_encoder.pkl` (Label encoder)
